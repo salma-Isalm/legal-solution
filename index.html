@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fav link -->
+    <link rel="shortcut icon" href="images/logo1.png" type="image/x-icon">
+    <!-- DaisyUI ADN link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- font-awesome link -->
+    <script src="https://kit.fontawesome.com/8d40faf00e.js" crossorigin="anonymous"></script>
+
+    <!-- gogle font poppings and EB+Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+              "bg-primary": "#B68C5A",
+              "text-primary": "#414040",
+              "text-secondary": "#707070",
+            },
+            backgroundImage: {
+              "banner-img": "url('./images/banner.png')",
+              "slider-1": "url('./images/slider-1.jpg')",
+              "slider-2": "url('./images/slider-2.jpg')",
+              "slider-3": "url('./images/slider-3.jpg')",
+            },
+        }
+      }
+    }
+  </script>
+  <style>
+    .font-grandma{
+      font-family: 'EB Garamond', serif;
+    }
+    .font-poppings{
+      font-family: 'Poppins', sans-serif;
+
+    }
+  </style>
+<body>
+
+
+<header class="md:container md:mx-auto" >
+  <!-- navber section -->
+  <nav class=" px-4 md:px-8 lg:mx-16  lg:mt-5">
+    <div class="flex items-center justify-between">
+      <!--logo  -->
+      <div class="flex items-center">
+        <img class="w-12 object-fill" src="images/logo1.png" alt="">
+        <a href="#" class="text-text-primary text-2xl lg:text-4xl font-extrabold font-grandma pl-1">Justice</a>
+
+      </div>
+      <!-- manu section -->
+      <div class="hidden lg:flex">
+       <ul class="flex gap-4 font-normal font-poppings text-text-secondary text-sm md:text-base">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Cases</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+       </ul>
+       
+      </div>
+        <!-- bitton section consult -->
+      <div class="hidden lg:flex justify-end ">
+        <a class="btn bg-bg-primary hover:bg-bg-primary font-extrabold font-poppings text-white text-sm md:text-base normal-case">Free Consultation</a>
+      </div>
+      <!-- small device manu -->
+      <div class="dropdown flex lg:hidden">
+        <label tabindex="0" class="btn btn-ghost px-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="inline-block w-5 h-5 stroke-current"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </label>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box right-5 w-52 font-poppins font-normal text-text-secondary text-sm md:text-base"
+        >
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li class="">
+            <a href="#">Services</a>
+          </li>
+          <li class="">
+            <a href="#">Cases</a>
+          </li>
+          <li class="">
+            <a href="#">Blog</a>
+          </li>
+          <li class="">
+            <a href="#">Contact Us</a>
+          </li>
+          <li class="">
+            <a
+              class="bg-bg-primary p-2 my-3 font-poppins font-normal text-white text-sm md:text-base mx-auto"
+              >Free Consultation</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+<!-- hero section -->
+  <div class=" px-4 md:px-8 lg:mx-16 mt-24 lmin-h-screen">
+    <div class="hero bg-banner-img rounded-lg p-24" >
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-3xl md:text-5xl font-extrabold text-white font-grandma">We Provide Effective Legal Solutions</h1>
+          <p class="mb-5 text-[#E7E7E7] text-sm font-normal">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <div class="flex gap-5">
+            <input
+            type="text"
+            placeholder="Search Your Services"
+            class="input w-full text-sm md:text-base"
+          />
+            <a class="btn bg-bg-primary hover:bg-bg-primary font-extrabold font-poppings text-white text-sm md:text-base normal-case border-none">Search</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main  class="md:container md:mx-auto" >
+  <section  class=" px-4 md:px-8 lg:mx-16 my-24">
+    <div class="text-center my-12">
+      <h2 class="text-text-primary font-grandma font-extrabold text-3xl ">The Legal Practice Area</h2>
+      <p class="text-text-secondary font-poppings font-normal mt-4 text-sm">Justice is an ethical and legal notion that refers to people acting in a way that is fair, equal, and balanced for all.</p>
+    </div> 
+    <!-- prectis area -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+      <div class="card  bg-white  border-2 border-gray-100  rounded-none lg:border-t-0 lg:border-l-0">
+        <figure class="px-10 pt-10">
+          <img src="images/business.png" alt="" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="text-text-primary font-grandma font-extrabold text-2xl">Business Law</h2>
+          <p class="text-text-secondary font-poppings text-sm font-normal">business law, also called commercial law or mercantile law, the body of rules, whether by convention, agreement, or national or international legislation, governing the dealings between persons in commercial matters.</p>
+          <div class="card-actions">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M20 4.0929C11.025 4.0929 3.75 11.3679 3.75 20.3429C3.75 29.3179 11.025 36.5929 20 36.5929C28.975 36.5929 36.25 29.3179 36.25 20.3429C36.25 11.3679 28.975 4.0929 20 4.0929ZM27.1333 21.2262C27.3674 20.9919 27.4989 20.6741 27.4989 20.3429C27.4989 20.0116 27.3674 19.6939 27.1333 19.4596L22.1333 14.4596C22.0189 14.3368 21.8809 14.2382 21.7276 14.1699C21.5742 14.1016 21.4087 14.0649 21.2409 14.0619C21.073 14.0589 20.9063 14.0898 20.7507 14.1527C20.595 14.2156 20.4536 14.3091 20.3349 14.4278C20.2162 14.5465 20.1227 14.6879 20.0598 14.8436C19.9969 14.9992 19.9661 15.1659 19.969 15.3338C19.972 15.5016 20.0087 15.6671 20.077 15.8205C20.1454 15.9738 20.2439 16.1118 20.3667 16.2262L23.2333 19.0929H13.75C13.4185 19.0929 13.1005 19.2246 12.8661 19.459C12.6317 19.6934 12.5 20.0114 12.5 20.3429C12.5 20.6744 12.6317 20.9924 12.8661 21.2268C13.1005 21.4612 13.4185 21.5929 13.75 21.5929H23.2333L20.3667 24.4596C20.2439 24.574 20.1454 24.712 20.077 24.8653C20.0087 25.0187 19.972 25.1842 19.969 25.352C19.9661 25.5199 19.9969 25.6866 20.0598 25.8422C20.1227 25.9979 20.2162 26.1393 20.3349 26.258C20.4536 26.3767 20.595 26.4702 20.7507 26.5331C20.9063 26.596 21.073 26.6268 21.2409 26.6239C21.4087 26.6209 21.5742 26.5842 21.7276 26.5159C21.8809 26.4475 22.0189 26.349 22.1333 26.2262L27.1333 21.2262Z" fill="#B68C5A"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="card border-2 border-gray-100 rounded-none lg:border-l-0
+       lg:bg-[#F0F8FF]">
+        <figure class="px-10 pt-10">
+          <img src="images/criminal.png" alt="" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="text-text-primary font-grandma font-extrabold text-2xl">Criminal Law</h2>
+          <p class="text-text-secondary font-poppings text-sm font-normal">business law, also called commercial law or mercantile law, the body of rules, whether by convention, agreement, or national or international legislation, governing the dealings between persons in commercial matters.</p>
+          <div class="card-actions">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M20 4.0929C11.025 4.0929 3.75 11.3679 3.75 20.3429C3.75 29.3179 11.025 36.5929 20 36.5929C28.975 36.5929 36.25 29.3179 36.25 20.3429C36.25 11.3679 28.975 4.0929 20 4.0929ZM27.1333 21.2262C27.3674 20.9919 27.4989 20.6741 27.4989 20.3429C27.4989 20.0116 27.3674 19.6939 27.1333 19.4596L22.1333 14.4596C22.0189 14.3368 21.8809 14.2382 21.7276 14.1699C21.5742 14.1016 21.4087 14.0649 21.2409 14.0619C21.073 14.0589 20.9063 14.0898 20.7507 14.1527C20.595 14.2156 20.4536 14.3091 20.3349 14.4278C20.2162 14.5465 20.1227 14.6879 20.0598 14.8436C19.9969 14.9992 19.9661 15.1659 19.969 15.3338C19.972 15.5016 20.0087 15.6671 20.077 15.8205C20.1454 15.9738 20.2439 16.1118 20.3667 16.2262L23.2333 19.0929H13.75C13.4185 19.0929 13.1005 19.2246 12.8661 19.459C12.6317 19.6934 12.5 20.0114 12.5 20.3429C12.5 20.6744 12.6317 20.9924 12.8661 21.2268C13.1005 21.4612 13.4185 21.5929 13.75 21.5929H23.2333L20.3667 24.4596C20.2439 24.574 20.1454 24.712 20.077 24.8653C20.0087 25.0187 19.972 25.1842 19.969 25.352C19.9661 25.5199 19.9969 25.6866 20.0598 25.8422C20.1227 25.9979 20.2162 26.1393 20.3349 26.258C20.4536 26.3767 20.595 26.4702 20.7507 26.5331C20.9063 26.596 21.073 26.6268 21.2409 26.6239C21.4087 26.6209 21.5742 26.5842 21.7276 26.5159C21.8809 26.4475 22.0189 26.349 22.1333 26.2262L27.1333 21.2262Z" fill="#B68C5A"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-white  border-2 border-gray-100 rounded-none lg:border-t-0 lg:border-x-0 ">
+        <figure class="px-10 pt-10">
+          <img src="images/child.png" alt="" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="text-text-primary font-grandma font-extrabold text-2xl">Child Support</h2>
+          <p class="text-text-secondary font-poppings text-sm font-normal">business law, also called commercial law or mercantile law, the body of rules, whether by convention, agreement, or national or international legislation, governing the dealings between persons in commercial matters.</p>
+          <div class="card-actions">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M20 4.0929C11.025 4.0929 3.75 11.3679 3.75 20.3429C3.75 29.3179 11.025 36.5929 20 36.5929C28.975 36.5929 36.25 29.3179 36.25 20.3429C36.25 11.3679 28.975 4.0929 20 4.0929ZM27.1333 21.2262C27.3674 20.9919 27.4989 20.6741 27.4989 20.3429C27.4989 20.0116 27.3674 19.6939 27.1333 19.4596L22.1333 14.4596C22.0189 14.3368 21.8809 14.2382 21.7276 14.1699C21.5742 14.1016 21.4087 14.0649 21.2409 14.0619C21.073 14.0589 20.9063 14.0898 20.7507 14.1527C20.595 14.2156 20.4536 14.3091 20.3349 14.4278C20.2162 14.5465 20.1227 14.6879 20.0598 14.8436C19.9969 14.9992 19.9661 15.1659 19.969 15.3338C19.972 15.5016 20.0087 15.6671 20.077 15.8205C20.1454 15.9738 20.2439 16.1118 20.3667 16.2262L23.2333 19.0929H13.75C13.4185 19.0929 13.1005 19.2246 12.8661 19.459C12.6317 19.6934 12.5 20.0114 12.5 20.3429C12.5 20.6744 12.6317 20.9924 12.8661 21.2268C13.1005 21.4612 13.4185 21.5929 13.75 21.5929H23.2333L20.3667 24.4596C20.2439 24.574 20.1454 24.712 20.077 24.8653C20.0087 25.0187 19.972 25.1842 19.969 25.352C19.9661 25.5199 19.9969 25.6866 20.0598 25.8422C20.1227 25.9979 20.2162 26.1393 20.3349 26.258C20.4536 26.3767 20.595 26.4702 20.7507 26.5331C20.9063 26.596 21.073 26.6268 21.2409 26.6239C21.4087 26.6209 21.5742 26.5842 21.7276 26.5159C21.8809 26.4475 22.0189 26.349 22.1333 26.2262L27.1333 21.2262Z" fill="#B68C5A"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-white  border-2 border-gray-100 rounded-none lg:border-l-0 lg:border-y-0 ">
+        <figure class="px-10 pt-10">
+          <img src="images/education.png" alt="" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="text-text-primary font-grandma font-extrabold text-2xl">Education Law</h2>
+          <p class="text-text-secondary font-poppings text-sm font-normal">business law, also called commercial law or mercantile law, the body of rules, whether by convention, agreement, or national or international legislation, governing the dealings between persons in commercial matters.</p>
+          <div class="card-actions">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M20 4.0929C11.025 4.0929 3.75 11.3679 3.75 20.3429C3.75 29.3179 11.025 36.5929 20 36.5929C28.975 36.5929 36.25 29.3179 36.25 20.3429C36.25 11.3679 28.975 4.0929 20 4.0929ZM27.1333 21.2262C27.3674 20.9919 27.4989 20.6741 27.4989 20.3429C27.4989 20.0116 27.3674 19.6939 27.1333 19.4596L22.1333 14.4596C22.0189 14.3368 21.8809 14.2382 21.7276 14.1699C21.5742 14.1016 21.4087 14.0649 21.2409 14.0619C21.073 14.0589 20.9063 14.0898 20.7507 14.1527C20.595 14.2156 20.4536 14.3091 20.3349 14.4278C20.2162 14.5465 20.1227 14.6879 20.0598 14.8436C19.9969 14.9992 19.9661 15.1659 19.969 15.3338C19.972 15.5016 20.0087 15.6671 20.077 15.8205C20.1454 15.9738 20.2439 16.1118 20.3667 16.2262L23.2333 19.0929H13.75C13.4185 19.0929 13.1005 19.2246 12.8661 19.459C12.6317 19.6934 12.5 20.0114 12.5 20.3429C12.5 20.6744 12.6317 20.9924 12.8661 21.2268C13.1005 21.4612 13.4185 21.5929 13.75 21.5929H23.2333L20.3667 24.4596C20.2439 24.574 20.1454 24.712 20.077 24.8653C20.0087 25.0187 19.972 25.1842 19.969 25.352C19.9661 25.5199 19.9969 25.6866 20.0598 25.8422C20.1227 25.9979 20.2162 26.1393 20.3349 26.258C20.4536 26.3767 20.595 26.4702 20.7507 26.5331C20.9063 26.596 21.073 26.6268 21.2409 26.6239C21.4087 26.6209 21.5742 26.5842 21.7276 26.5159C21.8809 26.4475 22.0189 26.349 22.1333 26.2262L27.1333 21.2262Z" fill="#B68C5A"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-white  border-2 border-gray-100 rounded-none lg:border-x-0 lg:border-y-0 ">
+        <figure class="px-10 pt-10">
+          <img src="images/divorce.png" alt="" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="text-text-primary font-grandma font-extrabold text-2xl">Devorce Law</h2>
+          <p class="text-text-secondary font-poppings text-sm font-normal">business law, also called commercial law or mercantile law, the body of rules, whether by convention, agreement, or national or international legislation, governing the dealings between persons in commercial matters.</p>
+          <div class="card-actions">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M20 4.0929C11.025 4.0929 3.75 11.3679 3.75 20.3429C3.75 29.3179 11.025 36.5929 20 36.5929C28.975 36.5929 36.25 29.3179 36.25 20.3429C36.25 11.3679 28.975 4.0929 20 4.0929ZM27.1333 21.2262C27.3674 20.9919 27.4989 20.6741 27.4989 20.3429C27.4989 20.0116 27.3674 19.6939 27.1333 19.4596L22.1333 14.4596C22.0189 14.3368 21.8809 14.2382 21.7276 14.1699C21.5742 14.1016 21.4087 14.0649 21.2409 14.0619C21.073 14.0589 20.9063 14.0898 20.7507 14.1527C20.595 14.2156 20.4536 14.3091 20.3349 14.4278C20.2162 14.5465 20.1227 14.6879 20.0598 14.8436C19.9969 14.9992 19.9661 15.1659 19.969 15.3338C19.972 15.5016 20.0087 15.6671 20.077 15.8205C20.1454 15.9738 20.2439 16.1118 20.3667 16.2262L23.2333 19.0929H13.75C13.4185 19.0929 13.1005 19.2246 12.8661 19.459C12.6317 19.6934 12.5 20.0114 12.5 20.3429C12.5 20.6744 12.6317 20.9924 12.8661 21.2268C13.1005 21.4612 13.4185 21.5929 13.75 21.5929H23.2333L20.3667 24.4596C20.2439 24.574 20.1454 24.712 20.077 24.8653C20.0087 25.0187 19.972 25.1842 19.969 25.352C19.9661 25.5199 19.9969 25.6866 20.0598 25.8422C20.1227 25.9979 20.2162 26.1393 20.3349 26.258C20.4536 26.3767 20.595 26.4702 20.7507 26.5331C20.9063 26.596 21.073 26.6268 21.2409 26.6239C21.4087 26.6209 21.5742 26.5842 21.7276 26.5159C21.8809 26.4475 22.0189 26.349 22.1333 26.2262L27.1333 21.2262Z" fill="#B68C5A"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-white  border-2 border-gray-100 rounded-none lg:border-r-0 lg:border-y-0 ">
+        <figure class="px-10 pt-10">
+          <img src="images/tax.png" alt="" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="text-text-primary font-grandma font-extrabold text-2xl">Tax Law</h2>
+          <p class="text-text-secondary font-poppings text-sm font-normal">business law, also called commercial law or mercantile law, the body of rules, whether by convention, agreement, or national or international legislation, governing the dealings between persons in commercial matters.</p>
+          <div class="card-actions">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M20 4.0929C11.025 4.0929 3.75 11.3679 3.75 20.3429C3.75 29.3179 11.025 36.5929 20 36.5929C28.975 36.5929 36.25 29.3179 36.25 20.3429C36.25 11.3679 28.975 4.0929 20 4.0929ZM27.1333 21.2262C27.3674 20.9919 27.4989 20.6741 27.4989 20.3429C27.4989 20.0116 27.3674 19.6939 27.1333 19.4596L22.1333 14.4596C22.0189 14.3368 21.8809 14.2382 21.7276 14.1699C21.5742 14.1016 21.4087 14.0649 21.2409 14.0619C21.073 14.0589 20.9063 14.0898 20.7507 14.1527C20.595 14.2156 20.4536 14.3091 20.3349 14.4278C20.2162 14.5465 20.1227 14.6879 20.0598 14.8436C19.9969 14.9992 19.9661 15.1659 19.969 15.3338C19.972 15.5016 20.0087 15.6671 20.077 15.8205C20.1454 15.9738 20.2439 16.1118 20.3667 16.2262L23.2333 19.0929H13.75C13.4185 19.0929 13.1005 19.2246 12.8661 19.459C12.6317 19.6934 12.5 20.0114 12.5 20.3429C12.5 20.6744 12.6317 20.9924 12.8661 21.2268C13.1005 21.4612 13.4185 21.5929 13.75 21.5929H23.2333L20.3667 24.4596C20.2439 24.574 20.1454 24.712 20.077 24.8653C20.0087 25.0187 19.972 25.1842 19.969 25.352C19.9661 25.5199 19.9969 25.6866 20.0598 25.8422C20.1227 25.9979 20.2162 26.1393 20.3349 26.258C20.4536 26.3767 20.595 26.4702 20.7507 26.5331C20.9063 26.596 21.073 26.6268 21.2409 26.6239C21.4087 26.6209 21.5742 26.5842 21.7276 26.5159C21.8809 26.4475 22.0189 26.349 22.1333 26.2262L27.1333 21.2262Z" fill="#B68C5A"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- What Our Client Say section -->
+  <section  class=" px-4 md:px-8 lg:mx-14 my-24">
+    <div class="text-center my-12">
+      <h2 class="text-text-primary font-grandma font-extrabold text-3xl ">What Our Client Say</h2>
+      <p class="text-text-secondary font-poppings font-normal mt-4 text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+    </div>
+
+    <!-- carosol section -->
+
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full ">
+        <div class="hero  bg-slider-3 ">
+          <div class="hero-content text-center">
+            <div class="max-w-md text-white">
+              <img class=" ml-24 md:ml-32 lg:ml-36" src="images/claint1.png" alt="">
+              <h2 class="text-2xl font-extrabold font-grandma">Awlad Hossain</h2>
+              <h1 class="text-sm font-normal">UIX Designer</h1>
+              <p class="py-6 font-normal text-[#F3F3F3]">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+            
+            </div>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a> 
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <div id="slide2" class="carousel-item relative w-full">
+        <div class="hero bg-slider-2 ">
+          <div class="hero-content text-center">
+            <div class="max-w-md text-white">
+              <img class=" ml-24 md:ml-32 lg:ml-36" src="images/claint2.png" alt="">
+              <h2 class="text-2xl font-extrabold font-grandma">Sahara Chowdury</h2>
+              <h1 class="text-sm font-normal">UIX Designer</h1>
+              <p class="py-6 font-normal text-[#F3F3F3]">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+            
+            </div>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a> 
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <div id="slide3" class="carousel-item relative w-full">
+        <div class="hero  bg-slider-1 ">
+          <div class="hero-content text-center">
+            <div class="max-w-md text-white">
+              <img class=" ml-24 md:ml-32 lg:ml-36" src="images/claint3.png" alt="">
+              <h2 class="text-2xl">Dolton ROc</h2>
+              <h1 class="textsml font-bold">UIX Designer</h1>
+              <p class="py-6">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+            
+            </div>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a> 
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+    </div>
+  </Section>
+
+  <!-- frequenly Asked Question section -->
+  <section class=" px-4 md:px-8 lg:mx-16 my-24">
+    <div class="text-center my-12">
+      <h2 class="text-text-primary font-grandma font-extrabold text-3xl ">Frequently Asked Any Questions</h2>
+      <p class="text-text-secondary font-poppings font-normal mt-4 text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+    </div>
+    <div class="flex flex-col-reverse lg:flex-row gap-12">
+      <div class="flex-1 space-y-6 my-6 lg:my-28">
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" checked="checked" /> 
+          <div class="collapse-title text-xl font-medium">
+            Are application fee waivers available?
+          </div>
+          <div class="collapse-content"> 
+            <p class="text-text-secondary font-poppings font-normal mt-4 text-sm">Fee waivers are generally given to students who demonstrate financial need. However, some schools will allow any student to avoid paying the application fee if they meet certain requirements, such as making an official on-campus visit. </p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" /> 
+          <div class="collapse-title text-xl font-medium">
+            Are application fee waivers available?
+          </div>
+          <div class="collapse-content"> 
+            <p class="text-text-secondary font-poppings font-normal mt-4 text-sm">Fee waivers are generally given to students who demonstrate financial need. However, some schools will allow any student to avoid paying the application fee if they meet certain requirements, such as making an official on-campus visit. </p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" /> 
+          <div class="collapse-title text-xl font-medium">
+            Are application fee waivers available?
+          </div>
+          <div class="collapse-content"> 
+            <p class="text-text-secondary font-poppings font-normal mt-4 text-sm">Fee waivers are generally given to students who demonstrate financial need. However, some schools will allow any student to avoid paying the application fee if they meet certain requirements, such as making an official on-campus visit. </p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" /> 
+          <div class="collapse-title text-xl font-medium">
+            Are application fee waivers available?
+          </div>
+          <div class="collapse-content"> 
+            <p class="text-text-secondary font-poppings font-normal mt-4 text-sm">Fee waivers are generally given to students who demonstrate financial need. However, some schools will allow any student to avoid paying the application fee if they meet certain requirements, such as making an official on-campus visit. </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex-1">
+        <img src="images/faq.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- contact section -->
+  <section class="px-4 md:px-8 lg:mx-16 my-24">
+    <div class="text-center my-12">
+      <h2 class="text-text-primary font-grandma font-extrabold text-3xl ">Contact With Us</h2>
+      <p class="text-text-secondary font-poppings font-normal mt-4 text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+    </div>
+    <div class="flex flex-col lg:flex-row gap-16">
+      <div class="flex-1 grid grid-cols-2">
+        <div class="p-12  bg-base-200 text-center border-2 border-gray-200">
+          <i class="fa-solid fa-location-dot text-[#B68C5A] text-3xl"></i>
+          <div class=" text-center">
+            <h2 class="">Address</h2>
+            <p  class="text-text-secondary font-poppings font-normal mt-4 text-sm">
+              A108 Adam Street,<br>
+              New York, NY 535022</p>
+          </div>
+        </div>
+        <div class="p-12  bg-base-200 text-center  border-2 border-gray-200">
+          <i class="fa-solid fa-phone text-[#B68C5A] text-3xl"></i>
+          <div class=" text-center">
+            <h2 class="">Call Us</h2>
+            <p  class="text-text-secondary font-poppings font-normal mt-4 text-sm">
+              +88 01750 00 00 00 <br>
+              +88 01750 00 00 00</p>
+          </div>
+        </div>
+        <div class="p-12  bg-base-200 text-center  border-2 border-gray-200">
+          <i class="fa-regular fa-envelope text-[#B68C5A] text-3xl"></i>
+          <div class=" text-center">
+            <h2 class="">Email Us</h2>
+            <p  class="text-text-secondary font-poppings font-normal mt-4 text-sm">
+              info@gmail.com <br>
+              info@gmail.com</p>
+          </div>
+        </div>
+        <div class="p-12  bg-base-200 text-center  border-2 border-gray-200">
+          <i class="fa-regular fa-clock text-[#B68C5A] text-3xl"></i>
+          <div class=" text-center">
+            <h2 class="">Working Hours</h2>
+            <p  class="text-text-secondary font-poppings font-normal mt-4 text-sm">
+              Mon-Fri: 9AM to 5PM <br>
+              Sunday: 9AM to 1 PM</p>
+          </div>
+        </div>
+       
+      </div>
+      <div class="flex-1 grid grid-cols-1 gap-3" >
+          <!-- lg -->
+          <input type="text" placeholder="Your Name" class="input bg-base-200  h-16 max-w-2xl" />
+          <input type="text" placeholder="Your Email" class="input bg-base-200  h-16 max-w-2xl" />
+          <input type="text" placeholder="Subject" class="input bg-base-200  h-16 max-w-2xl" />
+        
+          <input type="text" placeholder="Your message" class="input bg-base-200  h-28 max-w-2xl" />
+          <button class="btn bg-bg-primary hover:bg-bg-primary font-extrabold font-poppings text-white text-sm md:text-base normal-case border-none">Send Message</button>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="pl-16 lg:pl-0 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6 py-12 lg:py-36 lg:px-40 bg-black">
+
+  <nav class="space-y-4">
+    <header class="text-white">
+      <div class="flex items-center">
+        <img class="lg:w-12 object-fill" src="images/logo1.png" alt="">
+        <a href="#" class="text-4xl font-extrabold font-grandma lg:pl-1">Justice</a>
+
+      </div>
+    </header> 
+    <div>
+      <a class="text-[#CFCFCF]">
+        There are many variations <br>
+         of passages of Lorem Ipsum <br>
+          available, but the majority have <br>
+          suffered alteration in some <br>
+           form, by injected humour.</a> 
+    </div>
+  </nav> 
+  <nav  class="space-y-4">
+    <header class="  text-white text-2xl  font-extrabold font-grandma">Usefull Link</header> 
+   <div class="flex flex-col gap-2">
+    <a class="text-[#CFCFCF]">Homes</a> 
+    <a class="text-[#CFCFCF]">About us</a> 
+    <a class="text-[#CFCFCF]">Cases</a> 
+    <a class="text-[#CFCFCF]">Blogs</a>
+    <a class="text-[#CFCFCF]">Contact</a> 
+   </div>
+  </nav> 
+  <nav  class="space-y-4">
+    <header class="text-white text-2xl font-extrabold font-grandma">Contact Now</header> 
+   <div class="flex flex-col gap-3">
+    <a class=" text-[#CFCFCF]">
+      555 4th 5t NW, Washington <br>
+      DC 20530, United States</a> 
+    <a class=" text-[#CFCFCF]">
+      +88 01750 000 000 <br>
+      +88 01750 000 000</a> 
+    <a class=" text-[#CFCFCF]">
+      info@gmail.com <br>
+      info@gmail.com
+    </a>
+   </div>
+  </nav  class="space-y-4"> 
+  <form  class="space-y-4">
+    <header class="text-white text-2xl font-extrabold font-grandma">Subscribe</header> 
+    <fieldset class="form-control w-80">
+      <label class="label">
+        <span class="label-text text-[#CFCFCF] mb-4">Subscribe for our latest & Articles. <br>
+           We Won’t Give You Spam Mails</span>
+      </label> 
+      <div class="relative">
+        <input type="text" placeholder="Email Address" class="input  w-full pr-16 h-16" /> 
+        <button class="btn bg-bg-primary border-none h-16 absolute top-0 right-0 rounded-l-none"><i class="fa-regular fa-paper-plane"></i></button>
+      </div>
+    </fieldset>
+  </form>
+
+</footer>
+</body>
+</html>
